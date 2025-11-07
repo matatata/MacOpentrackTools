@@ -81,7 +81,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func pickAppBundle() -> String? {
         NSApplication.shared.activate()
         let dialog = NSOpenPanel();
-        dialog.message = "Pick Wine application bunbdle, e.g. CrossOver.app, Wine Stable.app ..."
+        dialog.message = "Pick a Wine application bundle, e.g. CrossOver.app, Homebrew's Wine*.app ..."
         dialog.prompt = "Manage Opentrack DLLs"
         
         dialog.showsHiddenFiles        = false
